@@ -67,14 +67,14 @@ public class RegistroPersonas {
                     datosPersona.setNumTelf(Integer.parseInt(sc.nextLine()));
 
 
-                    datosPersona.guardarP();
-                    datosPersona.grabarPersona();
+                    Utilidad.guardarP();
+                    Utilidad.grabarPersona();
 
                     break;
                 
                 case 2:
                 try {
-                    datosPersona.leerFichero("F:/personas.txt");                            
+                    Utilidad.leerFichero("F:/personas.txt");                            
                 }catch (Exception e) {
                     System.out.println("ERROR: " + e.getMessage());
                 }
